@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.spring.project.PlanInspotMapper">
+
+<!-- 	<select id="get_city_list" resultType="ScheduleValue">
+		select * from ${map_city_list} order by ${num}
+	</select> -->
+	
+<!-- 	<insert id="map_plan_inspot_list" parameterType="GetPlanInspotVO">
+	
+	 	insert into ${add_plan_info} (${pn_srl}, ${user_id})
+	 	values( MAP_PLAN_SQE.NEXTVAL, #{user_id})
+	 	
+	 	<selectKey keyProperty="pn_srl" resultType="int" order="AFTER">
+		SELECT MAP_PLAN_SQE.CURRVAL AS pn_srl FROM DUAL
+		</selectKey>	
+	 </insert>
+	 -->
+	 
+   <update id="Plan_inspot" parameterType="GetPlanInspotVO">
+	 MERGE INTO map_plan_inspot_list
+
+    USING dual
+
+       ON (pn_srl = #{pn_srl} AND list_num = #{list_num} AND set_day = #{set_day})
+
+    WHEN MATCHED THEN
+
+        UPDATE SET lat = #{lat},
+        lng = #{lng},
+        img = #{img},
+        title = #{title},
+        read_count = #{read_count}    
+        
+
+    WHEN NOT MATCHED THEN
+
+        INSERT (pn_srl, set_day, list_num, lat, lng, img, title, read_count) 
+
+        VALUES (#{pn_srl},#{set_day},#{list_num},#{lat},#{lng},#{img},#{title},#{read_count})
+
+	</update>
+	
+	
+	<select id="get_inspot_list" resultType="GetPlanInspotVO">
+	 	select * from MAP_PLAN_INSPOT_LIST
+	 	where pn_srl like #{pn_srl} AND
+	 		set_day like #{set_day} order by list_num
+	 </select>
+	 
+	 
+	 <delete id="del_inspot_list">
+	 	delete from MAP_PLAN_INSPOT_LIST
+	 	where pn_srl = #{pn_srl} AND
+	 		  set_day = #{set_day} 	
+	 </delete>
+	 
+	
+	<!-- 
+	resultType : select를 했을 때 레코드 하나의 타입
+	- 원래는 패키지 이름을 포함한 전체경로의 클래스 이름을 사용해야 함
+	- mybatis-config.xml에서 typeAliases 속성을 package로 
+	  정의했기 때문에 클래스 이름만 사용할 수 있음
+	 -->
+	<!--  <select id="select_by_bno" resultType="BoardVO">
+	 	select * from ${test_board}
+	 	where ${b_bno} = #{bno}
+	 </select>
+	 #{} : SpEL(스프링에서 사용하는 Expression Language)
+	 
+	 <select id="select_by_userid" resultType="BoardVO">
+	 	select * from ${test_board}
+	 	where ${b_userid} like #{userid}
+	 </select>
+	 
+	 <select id="select_by_title_content" resultType="BoardVO">
+	 	select * from ${test_board}
+	 	where ${b_title} like #{keyword} or
+	 		${b_content} like #{keyword} 
+	 		order by ${b_bno} desc
+	 </select>
+	 
+
+	 
+	 <update id="update">
+	 	update ${test_board}
+	 	set ${b_title} = #{title}, ${b_content} = #{content}
+	 	where ${b_bno} = #{bno}
+	 </update>
+	 
+
+	 
+	 <select id="total_count" resultType="Integer">
+	 	select count(*) total_cnt from ${test_board}
+	 </select>
+	 
+	 <select id="paging" resultType="BoardVO">
+	 	select
+	 		b.bno, b.title, b.content, b.userid, b.regdate
+	 		from (
+	 			select rownum rn, a.*
+	 			from (
+	 				select * from ${test_board} order by ${b_bno} desc
+	 			) a
+	 		) b
+	 		where rn between #{start} and #{end}
+	 </select>
+	 
+	 <update id="update_replycnt">
+	 	update ${test_board}
+	 	set ${b_replycnt} = ${b_replycnt} + #{amount}
+	 	where ${b_bno} = #{bno}
+	 </update>
+	  -->
+</mapper>
+
+
+
+
+
+
+
+
+
+

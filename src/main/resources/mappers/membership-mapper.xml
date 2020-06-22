@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.spring.project.MembershipMapper">
+
+  <select id="login" resultType="MembershipVO">
+    select * from ${guknow_membership}
+	 	where ${col_email} = #{email} and
+	 		     ${col_password} = #{password}
+  </select>
+
+  <select id="select_all" resultType="MembershipVO">
+    select * from ${guknow_membership} order by ${col_email} desc
+  </select>
+
+  <select id="select_by_email" resultType="MembershipVO">
+    select * from ${guknow_membership}
+    where ${col_email} like #{email}
+  </select>
+
+  <insert id="insert">
+    insert into ${guknow_membership}(${col_username}, ${col_password},
+    ${col_email}, ${col_gender})
+    values(#{username}, #{password}, #{email}, #{gender})
+  </insert>
+
+  <update id="update">
+    update ${guknow_membership}
+    set ${col_password} = #{password}, ${col_gender} = #{gender}
+    where ${col_email} = #{col_email}
+  </update>
+
+  <delete id="delete">
+    delete from ${guknow_membership}
+    where ${col_email} = #{email}
+  </delete>
+
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+

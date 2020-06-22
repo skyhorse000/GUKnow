@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+.movie_title ul{
+  width:420px;  
+}
+
+.movie_chart>div>div>div .infor .infor_btn .btn_total {
+        float: left;
+        width: 49%;      
+        text-align: center;
+        background: #f2f2f2;
+        font-size: 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        cursor: pointer;
+}
+
+.btn_total:hover {
+   color:red;
+}

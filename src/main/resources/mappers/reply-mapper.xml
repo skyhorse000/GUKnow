@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.spring.project.ReplyMapper">
+
+	<insert id="insert" >
+		insert into ${guknow_reply}	(${r_bno}, ${r_replycontent}, ${r_replyname})
+			values (#{bno}, #{replycontent}, #{replyname})
+	</insert>
+	
+	<select id="select_all_by_bno" resultType="ReplyVO">
+		select * from ${guknow_reply}
+		where ${r_bno} = #{bno}
+		order by ${r_rno}
+	</select>
+	
+<update id="update">
+		update ${guknow_reply}
+		set ${r_replycontent} = #{replycontent}
+		where ${r_rno} = #{rno}
+	</update>
+
+ 	<delete id="delete">
+		delete from ${guknow_reply}
+		where ${r_rno} = #{rno}
+	</delete>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+

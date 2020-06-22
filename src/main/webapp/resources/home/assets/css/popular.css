@@ -1,0 +1,219 @@
+#movie {
+  background-color: #ffffff;
+  margin-top: 50px;
+  padding-top: 30px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+  /* outline: 0 none; */
+}
+
+address, caption, cite, code, dfn, em, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+a:link, a:visited, a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
+caption, .blind, .hidden, .ir {
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  text-indent: -9999px;
+}
+
+.tit_cont {
+  position: relative;
+  padding-right: 20px;
+}
+
+.tit_cont.tit_ms {
+  padding-right: 0;
+}
+
+.tit_cont .tit_pos {
+  position: relative;
+  width: 940px;
+  border-bottom: 2px solid #000;
+}
+
+.tit_cont h2 {
+  font-weight: 800;
+  color: #333;
+  font-size: 36px;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  word-break: break-all;
+}
+
+.tit_cont.tit_ms h2 {
+  position: relative;
+  padding: 6px 0 10px 28px;
+}
+
+.tit_cont h2 .ico {
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.tit_cont.tit_ms h2 .ico {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 26px;
+  height: 24px;
+  background: url(../img/ico_tit_ms_pc.png) 0 0 no-repeat;
+  background-size: 26px auto;
+  text-indent: -9999px;
+}
+
+.clfix:after {
+  content: ".";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+
+.section_line {
+  margin-top: 30px;
+  border-top: 2px solid #e6e6e6;
+}
+
+.wrap_contView {
+  position: relative;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.wrap_contView .tit_atc:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 4px;
+  height: 20px;
+  background-color: #0a97cd;
+}
+
+.wrap_contView h3 {
+  display: inline-block;
+  margin-top: 11px;
+  font-size: 22px;
+  color: #000;
+}
+
+.wrap_contView .tit_atc {
+  position: relative;
+  padding-left: 15px;
+}
+
+.wrap_contView h3+.date {
+  display: inline-block;
+  margin-left: 3px;
+  margin-top: -7px;
+  font-size: 16px;
+  color: #666;
+  vertical-align: middle;
+}
+
+.listBn_msPc {
+  margin-top: 15px;
+}
+
+.listBn_msPc ul {
+  margin-bottom: 16px;
+}
+
+.listBn_msPc li:first-child {
+  margin-left: 0;
+}
+
+.listBn_msPc li {
+  float: left;
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+
+.listBn_msPc li.list_more {
+  border: 1px solid #ccc;
+}
+
+.listBn_msPc li.list_more a {
+  display: block;
+  box-sizing: border-box;
+  padding: 56px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.listBn_msPc li img {
+  width: 100%;
+  height: 100%;
+}
+
+.listBn_msPc .area_dimTxt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/popular/bg_dim.png) 0 0 repeat;
+}
+
+.listBn_msPc .area_dimTxt .table_wrap {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 47px;
+  margin-top: -24px;
+}
+
+.listBn_msPc .area_dimTxt .table {
+  display: table;
+  width: 100%;
+}
+
+.listBn_msPc .area_dimTxt .cell {
+  display: table-cell;
+  height: 47px;
+  vertical-align: middle;
+}
+
+.listBn_msPc .area_dimTxt .tit_photo {
+  display: block;
+  display: -webkit-box;
+  padding: 0 10px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 22px;
+}
+
+.listBn_msM {
+  display: none;
+}

@@ -1,0 +1,395 @@
+m#movie {
+  background-color: #ffffff;
+  margin-top: 50px;
+  padding-top: 30px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+  /* outline: 0 none; */
+}
+
+address, caption, cite, code, dfn, em, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+a:link, a:visited, a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
+caption, .blind, .hidden, .ir {
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  text-indent: -9999px;
+}
+
+.pop_subMenu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 110;
+  width: 170px;
+  border: 1px solid #999;
+  padding: 0;
+  background: #fff;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.pop_subMenu>ul {
+  padding: 10px 0;
+  background: url(../img/line_menupop.png) 50% 0 no-repeat;
+}
+
+.pop_subMenu>ul:first-child {
+  background: none;
+}
+
+.pop_subMenu>ul>li {
+  position: relative;
+  padding: 5px 0;
+}
+
+.pop_subMenu>ul>li>a {
+  display: block;
+  height: 20px;
+  margin-left: 20px;
+  padding: 0 20px 0 28px;
+  background: url(../img/ico_sprite_pop.png) 0 0 no-repeat;
+  vertical-align: middle;
+  letter-spacing: -1.1px;
+}
+
+.pop_subMenu>ul>li.btn_far>a {
+  background-position: 0 0;
+}
+
+.pop_subMenu>ul>li.btn_share>a {
+  background-position: 0 -35px;
+}
+
+.tit_cont {
+  position: relative;
+  padding-right: 20px;
+}
+
+.tit_cont .pop_subMenu {
+  top: 98px;
+}
+
+.tit_cont.tit_ev {
+  padding-right: 0;
+}
+
+.tit_cont .tit_pos {
+  position: relative;
+  width: 940px;
+  border-bottom: 2px solid #000;
+}
+
+.tit_cont .area_tag {
+  padding-bottom: 10px;
+}
+
+.tit_cont .area_tag>span {
+  position: relative;
+  display: inline-block;
+  min-height: 28px;
+  font-size: 20px;
+  color: #666;
+}
+
+.tit_cont .area_tag .name8 {
+  padding: 5px 0 0 30px;
+}
+
+.tit_cont .area_tag>span a {
+  color: #666;
+}
+
+.tit_cont .area_tag .name8 .ico {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 24px;
+  background: url(../img/ico_tit_list7.png) 0 0 no-repeat;
+  background-size: 26px auto;
+  text-indent: -9999px;
+}
+
+.tit_cont h2 {
+  font-weight: 800;
+  color: #333;
+  font-size: 36px;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  word-break: break-all;
+}
+
+.tit_cont.tit_ev h2 {
+  position: relative;
+  padding: 6px 0 10px 28px;
+}
+
+.tit_cont h2 .ico {
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.tit_cont.tit_ev h2 .ico {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 26px;
+  height: 24px;
+  background: url(../img/ico_tit_event_pc.png) 0 0 no-repeat;
+  background-size: 26px auto;
+  text-indent: -9999px;
+}
+
+.tit_cont .btn_titview {
+  overflow: hidden;
+  position: absolute;
+  top: 52px;
+  right: 0;
+  z-index: 90;
+  width: 24px;
+  height: 26px;
+  background: url(../img/btn_dot.png) 0 0 no-repeat;
+  background-size: 100% auto;
+  text-indent: -9999px;
+}
+
+.post_area {
+  position: absolute;
+  right: 0;
+  top: 11px;
+  z-index: 100;
+}
+
+.post_area button {
+  margin-right: 20px;
+}
+
+.post_area .btn_good {
+  float: left;
+}
+
+.post_area .btn_good .ico {
+  overflow: hidden;
+  display: inline-block;
+  width: 24px;
+  height: 20px;
+  background: url(../img/ico_post01.jpg) no-repeat 0 0/24px 20px;
+  text-indent: -9999px;
+}
+
+.post_area .num {
+  display: inline-block;
+  margin-left: 10px;
+  color: #000;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.post_area .btn_sharing {
+  float: left;
+}
+
+.post_area .btn_sharing .ico {
+  overflow: hidden;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/ico_post02.jpg) no-repeat 0 0/20px 20px;
+  text-indent: -9999px;
+}
+
+.post_area .num {
+  display: inline-block;
+  margin-left: 10px;
+  color: #000;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.post_area .num_view {
+  float: left;
+}
+
+.post_area .num_view .tit {
+  color: #000;
+  font-size: 16px;
+}
+
+.post_area .num {
+  display: inline-block;
+  margin-left: 10px;
+  color: #000;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.post_area:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.area_tagTop {
+  overflow: hidden;
+  position: relative;
+  margin-top: 15px;
+  padding-right: 93px;
+}
+
+.area_tagTop .inr {
+  overflow: hidden;
+  height: 72px;
+}
+
+.area_tagTop ul {
+  margin-left: -25px;
+}
+
+.area_tagTop li {
+  float: left;
+  margin-left: 25px;
+  line-height: 34px;
+}
+
+.area_tagTop a {
+  font-size: 16px;
+}
+
+.area_tagTop li.tagAll a {
+  font-weight: 800;
+}
+
+.clfix:after {
+  content: ".";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+
+.wrap_contView {
+  position: relative;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.box_evPhoto {
+  margin-top: 15px;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.box_evPhoto.two .left {
+  float: left;
+  width: 460px;
+}
+
+.box_evPhoto a {
+  display: block;
+  height: 420px;
+}
+
+.box_evPhoto.two .left a {
+  background-size: 460px 420px !important;
+}
+
+.box_evPhoto a img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+.box_evPhoto.two .right {
+  float: right;
+  width: 460px;
+}
+
+.box_evPhoto.two .right a {
+  background-size: 460px 420px !important;
+}
+
+.box_evPhoto:after {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.box_txtPhoto {
+  width: 940px;
+}
+
+.box_txtPhoto {
+  width: 100%;
+}
+
+.box_txtPhoto .txt_p {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.evmainBanner {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.eventMlist {
+  border-bottom: 1px solid #ccc;
+}
+
+.eventMlist ul {
+  overflow: hidden;
+  margin-left: -20px;
+}
+
+.eventMlist ul li {
+  float: left;
+  margin: 0 0 20px 20px;
+}
+
+.eventMlist ul li a {
+  display: block;
+  width: 170px;
+  height: 170px;
+  border: 1px solid #e6e6e6;
+}
+
+.eventMlist ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+.eventDetailCont {
+  padding: 80px 0 80px;
+  margin: 0 auto;
+}
+
+.eventDetailCont .box_txtPhoto .txt_p {
+  width: 940px;
+  margin: 0 auto 40px;
+}

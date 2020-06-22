@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.spring.project.BoardMapper">
+
+  <select id="select_all" resultType="BoardVO">
+    select * from
+    ${guknow_board} order by ${b_bno} desc
+  </select>
+  <!-- resultType : select를 했을 때 레코드 하나의 타입 - 원래는 패키지 이름을 포함한 전체경로의 클래스 이름을 
+    사용해야 함 - mybatis-config.xml에서 typeAliases 속성을 package로 정의했기 때문에 클래스 이름만 사용할 
+    수 있음 -->
+  <select id="select_by_bno" resultType="BoardVO">
+    select * from
+    ${guknow_board}
+    where ${b_bno} = #{bno}
+  </select>
+
+  <select id="select_by_username" resultType="BoardVO">
+    select * from
+    ${guknow_board}
+    where ${b_username} like #{username}
+  </select>
+
+  <select id="select_by_title_content" resultType="BoardVO">
+    select * from
+    ${guknow_board}
+    where ${b_title} like #{keyword} or
+    ${b_content} like
+    #{keyword}
+    order by ${b_bno} desc
+  </select>
+
+  <insert id="insert">
+    insert into ${guknow_board}(${b_title},
+    ${b_content}, ${b_username})
+    values(#{title}, #{content},
+    #{username})
+  </insert>
+
+  <update id="update">
+    update ${guknow_board}
+    set ${b_title} = #{title},
+    ${b_content} = #{content}, ${b_updatedate} = #{updatedate}
+    where
+    ${b_bno} = #{bno}
+  </update>
+
+  <delete id="delete">
+    delete from ${guknow_board}
+    where ${b_bno} = #{bno}
+  </delete>
+
+  <select id="total_count" resultType="Integer">
+    select count(*) total_cnt
+    from ${guknow_board}
+  </select>
+
+  <select id="paging" resultType="BoardVO">
+    select
+    b.bno, b.title, b.content,
+    b.username, b.regdate, b.updatedate
+    from (
+    select rownum rn, a.*
+    from (
+    select * from ${guknow_board} order by ${b_bno} desc
+    ) a
+    ) b
+    where rn
+    between #{start} and #{end}
+  </select>
+
+  <update id="update_replycnt">
+    update ${guknow_board}
+    set ${b_replycnt} =
+    ${b_replycnt} + #{amount}
+    where ${b_bno} = #{bno}
+  </update>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+

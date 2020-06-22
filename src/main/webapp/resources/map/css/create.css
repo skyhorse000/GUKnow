@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+
+         
+      #header {
+       width: 100%;
+       height:64px;
+       border-top:solid #4eb1e4 2px;
+       border-bottom: 1px solid #ddd;
+       position: relative;
+       
+       clear: both;
+      }
+      
+      .logo {
+      
+        padding-top: 11px;
+        padding-left: 20px;
+        float:left;
+        
+      }
+      
+      .logo img {    
+        vertical-align: middle;
+      }
+      
+      .logo img:first-child {
+        width:55px;
+      }
+      
+      .logo img:last-child{
+       width:80px;
+      }
+      
+      .close_btn {
+        width: 89px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        
+        
+        background-color: #ff9320;
+        cursor: pointer;
+        float:right;
+        margin:11px;
+      }
+      .close_btn a {
+        color:#fff;
+        font-size: 13px;
+        
+      }
+      
+      #map {
+        width:100%;
+        height:100%;
+      } 
+      
+      #full_wrap {
+      width:100%;
+      position:relative;  
+     
+      
+      }
+      .lf_full_wrap {      
+       float: left; 
+       height:100%;     
+    
+      }
+      .cat_menu {
+        width:70px;
+        background: #203341;
+        float:left;
+      }
+      .cat_menu li {
+      width:70px;
+      height: 70px;
+      font-size:12px;
+      border-bottom:solid 1px #374854;      
+      color:#fff;
+      text-align: center;
+      line-height: 70px;
+      
+      }
+
+      .right_full_box {      
+      float: left;
+      position:absolute;
+      width:100%;
+      height:902px;
+      left:336px;
+      top:0px;
+        
+      }
+      
+      
+ 
+      
+
+
+.schedule_full_box {
+  width:265px;
+  float:left;
+  height:50px;
+}
+
+
+#select_detail_view { 
+      
+      position: absolute;
+      top:10px;
+      left:10px;     
+      width:300px;
+      z-index:999;
+      border-radius: 5px;
+      background: #fff;
+      padding-bottom: 20px;
+}
+
+#city_title { 
+
+  height:59px;
+  line-height:59px;
+  padding-left:20px;
+  font-size:17px;
+  font-weight:bold;
+  color:#fff;
+  background: #1a7ad9;  
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;   
+  
+}
+.city_title_name {
+  float:left;  
+}
+
+#pn_date_box {
+    float:right;
+}
+
+#dateTime {
+  display:none;
+  width:230px;
+  position:absolute;
+}
+
+.pn_info{
+  padding-right:10px;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  float:left;
+}
+
+.date_pick {
+  
+  
+}
+
+.ui-datepicker {
+  margin-top: -35px;  
+}
+.pn_date_img {
+  float:right;
+  padding-right: 10px; 
+}
+
+#selected_cities{
+ 
+  padding:20px 15px;
+    
+}
+
+.city_info {
+  height:39px; 
+  background: #efefef;
+    color: #555555;
+    font-size: 15px;
+    line-height: 39px;
+    border-radius: 5px;
+    cursor: move; 
+}
+.del_city_btn{
+  float:left;
+  cursor: pointer;
+  margin: 4px 10px;
+  
+}
+
+.fl {
+  float:left;
+}
+
+.city_info_name {
+  float:left;
+}
+.city_set_day_box{
+  float:right;  
+  margin-right: 10px;
+}
+.city_set_day_info{
+  width:40px;
+  text-align: center;
+  font-size:13px;  
+}
+.city_set_minus_btn{
+  cursor: pointer;
+  margin-top:3px;  
+}
+.city_set_plus_btn{
+  cursor: pointer;
+  margin-top:3px; 
+}
+.detail_city_bnt {
+  padding-top:20px;
+  border-top:solid #d6d6d6 1px;  
+}
+.detail_plan_go_btn {
+  width:270px;
+  height:44px;
+  line-height: 44px;
+  text-align: center;
+  color:#fff;
+  margin:0 auto; 
+  background: #49b2e9;
+  border:solid #3099dd 1px; 
+}
+
+.customoverlay {
+
+  bottom:85px;
+  border-radius:3px;
+  border: 1px solid #ccc;
+  border-bottom:2px solid #ddd;
+  float:left;
+  opacity: 0.7;
+  
+  }
+.customoverlay:nth-of-type(n) {
+  border:0;
+   box-shadow:0px 1px 2px #888;
+   }
+.customoverlay a {
+  display:block;
+  text-decoration:none;
+  color:#000;
+  text-align:center;
+  border-radius:3px;
+  font-size:11px;
+  font-weight:bold;
+  overflow:hidden;
+}
+.customoverlay .title {
+  display:block;
+  text-align:center;
+  background:#fff;
+  padding:3px;
+  font-size:11px;
+  font-weight:bold;
+  }
+  
+ .title_box {
+  width:265px;
+  height: 70px;
+  background: #707070;
+  padding:0 10px;  
+ }
+ 
+ .back_btn {
+  width:13px;
+  height:23px;
+  background: url("../images/back_btn.png");
+  margin-top:22px;
+  cursor: pointer;
+  
+ }
+ .cu_title {
+  width:230px;
+  padding-left:10px;
+  font-size: 15px;
+  color:white;
+  float: left;
+  line-height: 68px;
+  font-weight: bold;
+ }
+ 
+ #city_list_box {
+   overflow-x:hidden;
+   overflow-y: scroll;
+ }
+ 
+ .item {
+  padding: 15px 0;
+  border-bottom: 1px solid #a7a7a7;
+  width:248px; 
+  position: relative;
+ }
+ 
+ .info_box {
+  padding-left:20px;
+  height:55px;
+  line-height: 50px;
+ }
+ .spot_to_inspot{
+  position: absolute;
+  top:25px;
+  right:15px;
+  cursor: pointer;
+ }
+  

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <!-- DB 테이블과 컬럼들을 mapper에 매핑하기 위한 변수 선언 -->
+  <properties>
+    <!-- * property - name : mapper.xml에서 사용될 이름 - value : DB 테이블 및 컬럼 이름 -->
+
+    <property name="map_city_list" value="map_city_list" />
+    <property name="num" value="num" />
+    <property name="ci_lat" value="ci_lat" />
+    <property name="ci_lng" value="ci_lng" />
+    <property name="ci_name" value="ci_name" />
+    <property name="ci_srl" value="ci_srl" />
+    <property name="is_state" value="is_state" />
+
+
+    <property name="get_plan_city" value="map_city_list" />
+    <property name="pn_srl" value="pn_srl" />
+
+
+
+    <property name="add_plan_city" value="add_plan_city" />
+    <property name="pn_srl" value="pn_srl" />
+    <property name="set_day" value="set_day" />
+    <property name="ci_srl" value="ci_srl" />
+    <property name="city_name" value="city_name" />
+    <property name="city_date" value="city_date" />
+    <property name="day_week" value="day_week" />
+    <property name="year" value="year" />
+    <property name="city_lat" value="city_lat" />
+    <property name="city_lng" value="city_lng" />
+
+
+    <property name="add_plan_member" value="add_plan_member" />
+    <property name="pn_srl" value="pn_srl" />
+    <property name="user_id" value="user_id" />
+
+    <property name="map_plan_inspot_list"
+      value="map_plan_inspot_list" />
+    <property name="pn_srl" value="pn_srl" />
+    <property name="set_day" value="set_day" />
+    <property name="list_num" value="list_num" />
+    <property name="lat" value="lat" />
+    <property name="lng" value="lng" />
+    <property name="img" value="img" />
+    <property name="title" value="title" />
+    <property name="read_count" value="read_count" />
+
+
+    <property name="get_inspot_list"
+      value="map_plan_inspot_list" />
+    <property name="pn_srl" value="pn_srl" />
+    <property name="set_day" value="set_day" />
+    <property name="list_num" value="list_num" />
+    <property name="lat" value="lat" />
+    <property name="lng" value="lng" />
+    <property name="img" value="img" />
+    <property name="title" value="title" />
+    <property name="read_count" value="read_count" />
+
+
+    <property name="del_inspot_list"
+      value="map_plan_inspot_list" />
+    <property name="pn_srl" value="pn_srl" />
+    <property name="set_day" value="set_day" />
+    <property name="list_num" value="list_num" />
+    <property name="lat" value="lat" />
+    <property name="lng" value="lng" />
+    <property name="img" value="img" />
+    <property name="title" value="title" />
+    <property name="read_count" value="read_count" />
+
+    <property name="add_plan_info" value="add_plan_info" />
+    <property name="pn_srl" value="pn_srl" />
+    <property name="user_id" value="user_id" />
+    <property name="city_count" value="city_count" />
+    <property name="default_ci" value="default_ci" />
+    <property name="start_day" value="start_day" />
+    <property name="tour_day" value="tour_day" />
+    <property name="pn_title" value="pn_title" />
+    <property name="default_city_name"
+      value="default_city_name" />
+    <property name="pn_complete" value="pn_complete" />
+
+    <property name="set_plan_info" value="add_plan_info" />
+    <property name="pn_srl" value="pn_srl" />
+    <property name="pn_title" value="pn_title" />
+
+    <property name="set_plan_info_com" value="add_plan_info" />
+    <property name="pn_srl" value="pn_srl" />
+    <property name="PN_COMPLETE" value="PN_COMPLETE" />
+
+    <property name="get_plan_info" value="add_plan_info" />
+    <property name="pn_srl" value="pn_srl" />
+
+
+    <property name="guknow_membership" value="guknow_membership" />
+    <property name="col_username" value="username" />
+    <property name="col_password" value="password" />
+    <property name="col_email" value="email" />
+    <property name="col_gender" value="gender" />
+
+    <property name="guknow_board" value="guknow_board" />
+    <property name="b_bno" value="bno" />
+    <property name="b_title" value="title" />
+    <property name="b_content" value="content" />
+    <property name="b_username" value="username" />
+    <property name="b_regdate" value="regdate" />
+    <property name="b_updatedate" value="updatedate" />
+    <property name="b_replycnt" value="replycnt" />
+
+    <property name="guknow_reply" value="guknow_reply" />
+    <property name="r_rno" value="rno" />
+    <property name="r_bno" value="bno" />
+    <property name="r_replycontent" value="replycontent" />
+    <property name="r_replyname" value="replyname" />
+    <property name="r_regdate" value="regdate" />
+    <property name="r_updatedate" value="updatedate" />
+
+  </properties>
+
+  <typeAliases>
+    <package name="edu.spring.project.domain" />
+  </typeAliases>
+</configuration>
+
+
+
+
+
+
+
+
+
+
+
+
+
