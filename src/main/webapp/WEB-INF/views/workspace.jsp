@@ -36,7 +36,7 @@
   <div id="header">
     <div class="header_wrap">
       <h1 class="logo fl">
-        <a href="/home">
+        <a href="/project/home">
         <img src="${pageContext.request.contextPath}/resources/map/images/logo.png" alt="logo"/>
         <img src="${pageContext.request.contextPath}/resources/map/images/logo-sub.png" alt="logo"/>
         </a>
@@ -1116,15 +1116,18 @@
   	          	
    	   		var polyline = new kakao.maps.Polyline({
    	   	    path: linePath, // 선을 구성하는 좌표배열 입니다
-   	   	  	endArrow: true,
+   	   	  	endArrow: true,   	   	  
    	   	    strokeWeight: 5, // 선의 두께 입니다
    	   	    strokeColor: 'red', // 선의 색깔입니다
    	   	    strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
    	   	    strokeStyle: 'solid' // 선의 스타일입니다
    	   		});
    	   		
+   	   		
+   	   		polyline.setZIndex(1000);
    	   		polyline.setMap(map); 
    	   		lines.push(polyline);
+   	   		console.log("폴리라인 zindex : " + polyline.getZIndex());
           
         }
         

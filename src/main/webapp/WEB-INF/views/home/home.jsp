@@ -36,7 +36,13 @@
       <div class="row">
         <div class="header clearfix">
           <h1>
-            <a href="home"> <em><img src="resources/home/assets/img/logo.png" alt="G.U.Know travel"></em> <strong><img src="resources/home/assets/img/logo-sub.png" alt="TRAVEL"></strong>
+            <a href="home">
+              <em>
+                <img src="resources/home/assets/img/logo.png" alt="G.U.Know travel">
+              </em>
+              <strong>
+                <img src="resources/home/assets/img/logo-sub.png" alt="TRAVEL">
+              </strong>
             </a>
           </h1>
           <nav class="nav">
@@ -69,7 +75,7 @@
           <div class="bm_right">
             <ul>
               <li class="line"><a href="#">여행지 날씨</a></li>
-              <li class="line"><a href="#">이용가이드 & 지도</a></li>
+              <li class="line"><a href="/project/login/login">문의하기</a></li>
               <li><a href="./board/list">공지사항</a></li>
             </ul>
             <ul>
@@ -139,14 +145,14 @@
   <section id="movie">
     <div class="container">
       <div class="row">
-        <h2 class="ir_so">Favorite</h2>
+        <h2 class="ir_so">home</h2>
         <div class="movie">
           <div class="movie_title">
             <ul class="clearfix">
               <li class="active"><a href="#">추천 여행지 소개 Blog</a></li>
               <li><a href="#">추천 숙소 소개 Blog</a></li>
-              <li><a href="#">코스 추천</a></li>
-              <li><a href="#">꿀잼보장</a></li>
+              <li><a href="#">코스 추천 Blog</a></li>
+              <li><a href="#">테마 여행 Blog</a></li>
             </ul>
           </div>
           <div class="movie_chart">
@@ -519,12 +525,42 @@
                 <div class="swiper-slide">
                   <div class="poster">
                     <figure>
-                      <img src="resources/home/assets/img/poster13.jpg" alt="침묵">
+                      <img src="resources/home/assets/img/theme_blog/theme_blog01/theme_blog01_01.png" alt="[리폼 여행 테마] ">
                     </figure>
                   </div>
                   <div class="infor">
                     <h3>
-                      <strong>북촌 한옥마을</strong>
+                      <strong>[리폼 여행 테마] </strong>
+                    </h3>
+                    <div class="infor_btn">
+                      <a href="theme_blog_01">상세정보</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="poster">
+                    <figure>
+                      <img src="resources/home/assets/img/theme_blog/theme_blog02/theme_blog02_01.png" alt="[찾아가고 싶은 섬 테마]">
+                    </figure>
+                  </div>
+                  <div class="infor">
+                    <h3>
+                      <strong>[찾아가고 싶은 섬 테마]</strong>
+                    </h3>
+                    <div class="infor_btn">
+                      <a href="theme_blog_02">상세정보</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="poster">
+                    <figure>
+                      <img src="resources/home/assets/img/theme_blog/theme_blog03/theme_blog03_01.png" alt="[서핑 테마]">
+                    </figure>
+                  </div>
+                  <div class="infor">
+                    <h3>
+                      <strong>[서핑 테마]</strong>
                     </h3>
                     <div class="infor_btn">
                       <a href="#">상세정보</a>
@@ -534,12 +570,12 @@
                 <div class="swiper-slide">
                   <div class="poster">
                     <figure>
-                      <img src="resources/home/assets/img/poster14.jpg" alt="침묵">
+                      <img src="resources/home/assets/img/theme_blog/theme_blog04/theme_blog04_01.png" alt="[댕댕이 테마]">
                     </figure>
                   </div>
                   <div class="infor">
                     <h3>
-                      <strong>경북궁</strong>
+                      <strong>[댕댕이 테마]</strong>
                     </h3>
                     <div class="infor_btn">
                       <a href="#">상세정보</a>
@@ -549,12 +585,12 @@
                 <div class="swiper-slide">
                   <div class="poster">
                     <figure>
-                      <img src="resources/home/assets/img/poster15.jpg" alt="침묵">
+                      <img src="resources/home/assets/img/theme_blog/theme_blog05/theme_blog05_01.png" alt="[맛있는 녀석들 테마]">
                     </figure>
                   </div>
                   <div class="infor">
                     <h3>
-                      <strong>무창포 갯벌</strong>
+                      <strong>[맛있는 녀석들 테마]</strong>
                     </h3>
                     <div class="infor_btn">
                       <a href="#">상세정보</a>
@@ -564,12 +600,12 @@
                 <div class="swiper-slide">
                   <div class="poster">
                     <figure>
-                      <img src="resources/home/assets/img/poster16.jpg" alt="침묵">
+                      <img src="resources/home/assets/img/theme_blog/theme_blog06/theme_blog06_01.png" alt="[축제 테마]">
                     </figure>
                   </div>
                   <div class="infor">
                     <h3>
-                      <strong>서울 강남</strong>
+                      <strong>[축제 테마]</strong>
                     </h3>
                     <div class="infor_btn">
                       <a href="#">상세정보</a>
@@ -579,12 +615,12 @@
                 <div class="swiper-slide">
                   <div class="poster">
                     <figure>
-                      <img src="resources/home/assets/img/poster29.jpg" alt="북촌 한옥마을">
+                      <img src="resources/home/assets/img/theme_blog/theme_blog07/theme_blog07_01.png" alt="[강 테마]">
                     </figure>
                   </div>
                   <div class="infor">
                     <h3>
-                      <strong>북촌 한옥마을</strong>
+                      <strong>[강 테마]</strong>
                     </h3>
                     <div class="infor_btn">
                       <a href="#">상세정보</a>
@@ -594,42 +630,12 @@
                 <div class="swiper-slide">
                   <div class="poster">
                     <figure>
-                      <img src="resources/home/assets/img/poster30.jpg" alt="경북궁">
+                      <img src="resources/home/assets/img/theme_blog/theme_blog08/theme_blog08_01.png" alt="[호수 테마]">
                     </figure>
                   </div>
                   <div class="infor">
                     <h3>
-                      <strong>경북궁</strong>
-                    </h3>
-                    <div class="infor_btn">
-                      <a href="#">상세정보</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="poster">
-                    <figure>
-                      <img src="resources/home/assets/img/poster31.jpg" alt="무창포 갯벌">
-                    </figure>
-                  </div>
-                  <div class="infor">
-                    <h3>
-                      <strong>무창포 갯벌</strong>
-                    </h3>
-                    <div class="infor_btn">
-                      <a href="#">상세정보</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="poster">
-                    <figure>
-                      <img src="resources/home/assets/img/poster32.jpg" alt="서울 강남">
-                    </figure>
-                  </div>
-                  <div class="infor">
-                    <h3>
-                      <strong>서울 강남</strong>
+                      <strong>[호수 테마]</strong>
                     </h3>
                     <div class="infor_btn">
                       <a href="#">상세정보</a>

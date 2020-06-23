@@ -50,31 +50,30 @@
     <!-- 파일 업로드 최대용량 설정 : 1024 x 1024 x 10 = 10MB -->
     <beans:property name="maxUploadSize" value="10485760"></beans:property>
   </beans:bean>
-
-  <!-- Interceptor 클래스의 인스턴스를 bean으로 관리 -->
-  <beans:bean id="loginInterceptor"
+  
+      <!-- Interceptor 클래스의 인스턴스를 bean으로 관리 -->
+   <beans:bean id="loginInterceptor"
     class="edu.spring.project.interceptor.LoginInterceptor">
   </beans:bean>
-
+ 
   <beans:bean id="authInterceptor"
     class="edu.spring.project.interceptor.AuthInterceptor">
   </beans:bean>
-
-
-
-  <!-- Interceptor가 가로챌 URL 매핑 설정 -->
+  
+    <!-- Interceptor가 가로챌 URL 매핑 설정 -->
   <interceptors>
-    <interceptor>
-      <mapping path="/login/login-post" />
-      <beans:ref bean="loginInterceptor" />
+   <interceptor>
+      <mapping path="/login/login-post"/>
+      <beans:ref bean="loginInterceptor"/>
     </interceptor>
-
+    
+    
     <interceptor>
-      <mapping path="/board/register" />
-      <mapping path="/board/detail" />
-      <beans:ref bean="authInterceptor" />
+      <mapping path="/board/register"/>
+      <mapping path="/planlist"/>
+      <mapping path="/create"/>
+      <beans:ref bean = "authInterceptor"/>
     </interceptor>
-
   </interceptors>
 
 

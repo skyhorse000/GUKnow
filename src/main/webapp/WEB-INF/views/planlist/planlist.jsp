@@ -75,8 +75,8 @@
           <div class="bm_right">
             <ul>
               <li class="line"><a href="#">여행지 날씨</a></li>
-              <li class="line"><a href="#">이용가이드 & 지도</a></li>
-              <li><a href="#">공지사항</a></li>
+              <li class="line"><a href="/project/login/login">문의하기</a></li>
+              <li><a href="./board/list">공지사항</a></li>
             </ul>
             <ul>
               <li class="white"><a href="planlist">일정 보기</a></li>
