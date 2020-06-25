@@ -5,11 +5,17 @@
 ## Stack
 
 IDE : Eclipse, STS4
+
 Language : JAVA, JSTL, JSP, HTML5, CSS3, JavaScript, jQuery
+
 Middleware : TOMCAT
+
 DBMS : Oracle Database 11g Enterprise Edition
+
 Framework : Spring Framework
+
 ORM : Mybatis
+
 VCS : SVN
 
 ### 프로젝트 기간
