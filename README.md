@@ -44,6 +44,8 @@ api를 통하여 각 지역의 추천코스, 음식, 숙박등 정보를 받아�
 
 [PPT(SlideShare)](https://www.slideshare.net/ssuser7b6609/guknow-236193595)
 
+![workspace](https://user-images.githubusercontent.com/60906750/85684702-5234c480-b709-11ea-93e6-9639de47d281.png)
+
 ![move_spot_item](https://user-images.githubusercontent.com/60906750/85684556-303b4200-b709-11ea-9839-6623dcbdd162.gif)
 
 
