@@ -43,7 +43,6 @@ api를 통하여 각 지역의 추천코스, 음식, 숙박등 정보를 받아�
 
 
 [PPT(SlideShare)](https://www.slideshare.net/ssuser7b6609/guknow)
-[PPT(SlideShare)](https://www.slideshare.net/ssuser7b6609/guknow){:target="_blank"}
 
 
 * 회원관리 기능
